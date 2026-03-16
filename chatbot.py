@@ -29,8 +29,8 @@ class VoiceAssistant:
                                    input=True, frames_per_buffer=int(SAMPLE_RATE * FRAME_MS / 1000))
         
         # 初始化輕量級喚醒詞模型
-        # 注意：這裡先載入預設模型作為範例，後續需要替換為自定義的 "Mola" 模型
-        self.oww_model = Model(wakeword_models=["hey_jarvis"]) 
+        # 注意：這裡先載入預設模型作為範例，後續需要替換為自定義的模型
+        self.oww_model = Model(wakeword_models=["hey_mola"]) 
         
         self.history = [
             {
